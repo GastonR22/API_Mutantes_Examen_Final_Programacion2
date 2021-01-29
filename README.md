@@ -1,7 +1,8 @@
 # API_Mutantes_Examen_Final_Programacion2
 
 Proyecto final para programación 2 realizando una API con el controlador, servicio y entidad. Exceptuando el repositorio y la base de datos.
-Desarrollado en IntelliJ IDEA Community Edition 2020.3.1
+Desarrollado en IntelliJ IDEA Community Edition 2020.3.1.
+Para que funcione correctamente se debe crear una base de datos llamada db_mutante, y utilizar el puerto 9002
 
 
 Examen Mercadolibre
