@@ -29,6 +29,7 @@ Envio al POST de un NO MUTANTE:
  "dna": ["ATGCGA","CAGTGC","TTATTT","AGACGG","GCGTCA","TCACTG"]
 }
 
-7- .En el caso de que en el POST se envie un MUTANTE devolvera una respuesta al BODY como TRUE con un STATUS 200 OK
-   .En el caso de que en el POST se envie un NO MUTANTE devolvera una respuesta al BODY como FALSE con un STATUS 403 FORBIDDEN
+7- En el caso de que en el POST se envie un MUTANTE devolvera una respuesta al BODY como TRUE con un STATUS 200 OK
+
+8- En el caso de que en el POST se envie un NO MUTANTE devolvera una respuesta al BODY como FALSE con un STATUS 403 FORBIDDEN
 
