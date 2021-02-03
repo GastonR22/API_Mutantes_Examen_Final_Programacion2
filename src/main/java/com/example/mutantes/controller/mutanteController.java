@@ -1,6 +1,6 @@
 package com.example.mutantes.controller;
 
-import com.example.mutantes.entity.Mutante;
+import com.example.mutantes.dto.MutanteDto;
 import com.example.mutantes.service.MutanteService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class mutanteController {
     }
 
     @PostMapping("/mutant/")
-    public ResponseEntity<?> save(@RequestBody Mutante entity){
+    public ResponseEntity<?> save(@RequestBody MutanteDto entity){
         try {
             ResponseEntity respuesta = mutanteService.isMutant(entity);
             return respuesta;

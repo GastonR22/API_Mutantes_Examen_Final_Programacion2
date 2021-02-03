@@ -1,6 +1,6 @@
 package com.example.mutantes.service;
 
-import com.example.mutantes.entity.Mutante;
+import com.example.mutantes.dto.MutanteDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -11,10 +11,10 @@ import javax.transaction.Transactional;
 public class MutanteService {
 
     @Transactional
-    public ResponseEntity<?> isMutant(Mutante dna) {
+    public ResponseEntity<?> isMutant(MutanteDto dna) {
         String[] adn = dna.getDna();
 
-        char matrizMutante2[][] = convertirMatriz(adn);
+        char[][] matrizMutante2 = convertirMatriz(adn);
         int contadorHorizontal2 = verificacionHorizontal(matrizMutante2);
         int contadorVertical2 = verificacionVertical(matrizMutante2);
         int contadorOblicuoI = verficacionOblicuaIzquierda(matrizMutante2);
@@ -34,7 +34,7 @@ public class MutanteService {
     public char[][] convertirMatriz(String[] arrayCadena) {
         int contador = 0;
         char[] aux;
-        char matrizMutante[][] = new char[arrayCadena.length][arrayCadena.length];
+        char[][] matrizMutante = new char[arrayCadena.length][arrayCadena.length];
 
         //Convertimos el array de String a una Matriz de caracteres
         for (int i = 0; i < arrayCadena.length; i++) {
